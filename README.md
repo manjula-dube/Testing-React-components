@@ -36,7 +36,7 @@ After we migrated to jest running a single test case took almost from 5 seconds 
 
 ###### How testing helped us? (Inside stories)
 
-###### Should i use it or not?
+###### Should I use it or not?
 
 
 Links to slides http://slides.com/manjuladube/w#/
