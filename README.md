@@ -2,7 +2,7 @@
  
  ## Importance of testing in Software development & How to test your react components?
  
- > Tests says "I am Important" but the developer says "I do not want lot of dependencies" 
+ > Tests says "I am Important" but developer says "I do not want to use a framework with lot of dependencies" 
  
  
 ###### Do we really test? 
