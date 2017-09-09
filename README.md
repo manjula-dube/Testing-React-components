@@ -20,7 +20,9 @@ After we migrated to jest running a single test case took almost from 5 seconds 
 
 ###### Testing Frameworks
 
-###### How to test React components
+###### What is unit testing?
+
+###### How to test your React components?
 
 ###### What is Jest?
 
@@ -33,6 +35,8 @@ After we migrated to jest running a single test case took almost from 5 seconds 
 ###### Demo time
 
 ###### JEST V/S ENZYMNE?
+
+###### Cons of using Jest
 
 ###### How testing helped us? (Inside stories)
 
