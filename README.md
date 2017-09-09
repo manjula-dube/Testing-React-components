@@ -7,6 +7,7 @@
  
 ###### Do we really test? 
   ##### Stop Lying
+###### We just love the "IDEA OF TESTING"  
  
 We started with,  Jasmine-based stack, we’ve adopted a testing stack consisting of Mocha as our test runner, Chai for assertions, and Enzyme for asserting on component output. But than it created like too much dependency. lot of effort. Then we tried Jest and it very cool and works with less effort & writing more of test cases. 
 
@@ -16,9 +17,11 @@ But most importantly it mean set that everytime we hire someone new, they wouldn
 
 After we migrated to jest running a single test case took almost from 5 seconds to instant run, which means our feed back loop was very tighted which means we ended up writing more test cases.
 
+###### Bugs you have heard of.
+
 ###### How do we prevent bugs?
 
-###### Why Testing?
+###### Why should you write tests?
 
 ###### Types of Testing
 
