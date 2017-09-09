@@ -40,9 +40,11 @@ After we migrated to jest running a single test case took almost from 5 seconds 
 
 ###### How does snapshot work?
 
-###### Demo time
+###### Demo time!!!!
 
-###### JEST V/S ENZYMNE?
+ ![alt text](https://i.imgur.com/hPKi59j.png)
+
+###### Jest v/s Enzyme?
 
 ###### Cons of using Jest
 
