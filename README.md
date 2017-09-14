@@ -40,9 +40,9 @@ test('<Button /> renders with text as prop', () => {
 }); ```
  
  
-The same tests in chai would actually look something like below snippet. Also you would manually update your test case once you updated your component.
+##### The same tests in chai would actually look something like below snippet. Also you would manually update your test case once you updated your component.
  
- Test with chai & enzyme
+###### Test with chai & enzyme
  
  ```import React from 'react';
 import { expect } from 'chai';
@@ -66,7 +66,7 @@ describe('<ActionButton />', () => {
   });
 });```
 -----------------------
-Steps to run your tests
+###### Steps to run your tests
  
 To run the test 
 
