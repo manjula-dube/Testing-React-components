@@ -18,37 +18,38 @@ But most importantly it mean set that everytime we hire someone new, they wouldn
 
 After we migrated to jest running a single test case took almost from 5 seconds to instant run, which means our feed back loop was very tighted which means we ended up writing more test cases.
 
-###### How do we prevent bugs?
-
-###### Why should you write tests?
-
-###### Types of Testing
-
-###### Testing Frameworks
-
-###### What is unit testing?
-
-###### How to test your React components?
-
-###### What is Jest?
-
-###### Why Jest?
-
-###### What is snapshot testing?
-
-###### How does snapshot work?
-
 ###### Demo time!!!!
 
  ![alt text](https://i.imgur.com/hPKi59j.png)
+ 
+ 
+Jest snapshot makes it very simple to test your react components.
 
-###### Jest v/s Enzyme?
+`
+import React from 'react';
+import renderer from 'react-test-renderer';
+import ActionButton from '../ActionButton';
 
-###### Cons of using Jest
+test('<Button /> renders with text as prop', () => {
+  const tree = renderer.create(
+    <ActionButton text="BOOK" state="disabled" active="button-active"/>
+  ).toJSON();
+  
+  expect(tree).toMatchSnapshot();
+});
+`
+ 
+To run the test 
 
-###### How testing helped us? (Inside stories)
+`npm run test`
 
-###### Should I use it or not?
+To update snapshot
+
+`jest --updateSnapshot`
+
+
+
+
 
 
 Links to slides http://slides.com/manjuladube/w#/
