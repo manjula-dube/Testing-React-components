@@ -25,7 +25,9 @@ After we migrated to jest running a single test case took almost from 5 seconds 
  
 Jest snapshot makes it very simple to test your react components.
 
-
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
 ```
 import React from 'react';
 import renderer from 'react-test-renderer';
@@ -38,13 +40,15 @@ test('<Button /> renders with text as prop', () => {
   
   expect(tree).toMatchSnapshot();
 });
- 
- 
-##### The same tests in chai would actually look something like below snippet. Also you would manually update your test case once you updated your component.
+
+```
+
+##### The same tests in chai would actually end up writing too many describes. Also you would manually update your test case once you updated your component.
  
 ###### Test with chai & enzyme
  
- ```import React from 'react';
+```
+import React from 'react';
 import { expect } from 'chai';
 import { render } from 'enzyme';
 import Button from './ActionButton';
@@ -65,6 +69,8 @@ describe('<ActionButton />', () => {
     expect( wrapper.text() ).to.contain('BOOK');
   });
 });
+```
+
 -----------------------
 ###### Steps to run your tests
  
