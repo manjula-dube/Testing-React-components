@@ -39,6 +39,37 @@ test('<Button /> renders with text as prop', () => {
   expect(tree).toMatchSnapshot();
 }); ```
  
+ 
+The same tests in chai would actually look something like below snippet. Also you would manually update your test case once you updated your component.
+ 
+ Test with chai & enzyme
+ 
+ ```
+ import React from 'react';
+import { expect } from 'chai';
+import { render } from 'enzyme';
+import Button from './ActionButton';
+
+describe('<ActionButton />', () => {
+  it('has a .button classname', () => {
+     const  wrapper = render(<Button/>);
+     expect(wrapper.find('.button').length).to.equal(1);
+  });
+
+  it('has [status] attribute', () => {
+    const wrapper = render(<Button />);
+    expect(wrapper.find('[status]').length).to.equal(1);
+  });
+  
+  it('displays the text prop', () => {
+    const wrapper = render(<Button text="BOOK" />);
+    expect( wrapper.text() ).to.contain('BOOK');
+  });
+});
+```
+-----------------------
+Steps to run your tests
+ 
 To run the test 
 
 `npm run test`
