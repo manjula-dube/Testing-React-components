@@ -25,7 +25,8 @@ After we migrated to jest running a single test case took almost from 5 seconds 
  
 Jest snapshot makes it very simple to test your react components.
 
-`
+
+```
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ActionButton from '../ActionButton';
@@ -36,8 +37,7 @@ test('<Button /> renders with text as prop', () => {
   ).toJSON();
   
   expect(tree).toMatchSnapshot();
-});
-`
+}); ```
  
 To run the test 
 
