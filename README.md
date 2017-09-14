@@ -37,7 +37,7 @@ test('<Button /> renders with text as prop', () => {
   ).toJSON();
   
   expect(tree).toMatchSnapshot();
-}); ```
+});
  
  
 ##### The same tests in chai would actually look something like below snippet. Also you would manually update your test case once you updated your component.
@@ -64,7 +64,7 @@ describe('<ActionButton />', () => {
     const wrapper = render(<Button text="BOOK" />);
     expect( wrapper.text() ).to.contain('BOOK');
   });
-});```
+});
 -----------------------
 ###### Steps to run your tests
  
@@ -75,10 +75,6 @@ To run the test
 To update snapshot
 
 `jest --updateSnapshot`
-
-
-
-
 
 
 Links to slides http://slides.com/manjuladube/w#/
