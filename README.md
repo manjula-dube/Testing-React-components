@@ -18,8 +18,6 @@ But most importantly it mean set that everytime we hire someone new, they wouldn
 
 After we migrated to jest running a single test case took almost from 5 seconds to instant run, which means our feed back loop was very tighted which means we ended up writing more test cases.
 
-###### Bugs you have heard of.
-
 ###### How do we prevent bugs?
 
 ###### Why should you write tests?
