@@ -80,6 +80,7 @@ To update snapshot
 
 `jest --updateSnapshot`
 
+The idea is quite similar to the UI snapshot tests some of you may know: You take an image of your current app in a specified state and compare it to the previous image you have taken. The problem if you use actual images is that they are big, contain a lot of unused information, depend on your (maybe changing) environment (e.g. browser size). Because of these problems, they feel heavy, the tests take a time to complete and may occasionally fail for no reason. The way Jest improves this situation is that it uses a test renderer to render your React or React Native components to a JSON representation. This representation is stored with the new snapshot feature and may be diffed against new test runs results.
 
 Links to slides http://slides.com/manjuladube/w#/
 
