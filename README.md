@@ -44,8 +44,7 @@ The same tests in chai would actually look something like below snippet. Also yo
  
  Test with chai & enzyme
  
- ```
- import React from 'react';
+ ```import React from 'react';
 import { expect } from 'chai';
 import { render } from 'enzyme';
 import Button from './ActionButton';
@@ -65,8 +64,7 @@ describe('<ActionButton />', () => {
     const wrapper = render(<Button text="BOOK" />);
     expect( wrapper.text() ).to.contain('BOOK');
   });
-});
-```
+});```
 -----------------------
 Steps to run your tests
  
